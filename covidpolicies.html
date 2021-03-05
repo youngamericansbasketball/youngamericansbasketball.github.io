@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="nav-bar-black">
+            <a href="index.html"><img class="nav-bar-item-left" src="ya_images\logo.PNG"></a>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Navigation links (hidden by default on mobile device) -->
+            <div id="myLinks">
+                <a href="contactus.html" class="nav-button nav-bar-item-right">Contact Us</a>
+                <a href="upcomingevents.html" class="nav-button nav-bar-item-right">Upcoming Events</a>
+                <a href="training.html" class="nav-button nav-bar-item-right">Skills Training</a>
+                <a href="dev_league.html" class="nav-button nav-bar-item-right">Leagues</a>
+                <a href="club.html" class="nav-button nav-bar-item-right">Club Teams</a>
+            </div>
+        </nav>
+
+        <!-- Second Navigation -->
+        <nav class="nav-bar-red">
+            <a href="dev_league.html" class="second-nav-button">Register Now</a>
+            |
+            <a href="covidpolicies.html"    class="second-nav-button">Covid Policies</a>
+        </nav>
+
+        <!-- Page Title -->
+        <div class="row">
+            <br>
+            <div class="col-12">
+                <div class="general_title">COVID-19 Policies</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="gen_paragraph_text">
+                        Young Americans Basketball Club takes the COVID-19 pandemic very seriously
+                        and we are committed to protecting the health and safety of our players and 
+                        staff by ensuring that we adhere to guidelines set by the CDC and Arizona 
+                        Department of Health Services. In addition to mandatory temperature checks, 
+                        hand washing/sanitization at every one of our indoor events including
+                        practices, and the wearing of masks when not actively playing on the court, 
+                        we strongly ask any player or staff member who has any COVID-19 related
+                        symptoms to stay home and consult with a medical professional before returning
+                        to the club. Additionally, at this time, <b><i>we are enforcing a policy of only 
+                        players and coaches allowed at all indoor events including practices.</i></b> 
+                        This unfortunately means that family and friends will not be allowed inside any
+                        of our gyms or as an in-person spectator. We know how difficult that will be
+                        for all of our incredibly supportive families, but we know that you will understand
+                        and support our decisions as it is solely in the interest of protecting our
+                        players and staff. We greatly look forward to a day when this is all behind us
+                        and we can again welcome you all into our gyms so you can enjoy all of the hard
+                        work your players have put into their games. Thank you and please don't hesitate
+                        to let us know if you have any questions or concerns.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="row black_container">
+                <div class="col-12">
+                    <div class="gen_paragraph_text">
+                        <center>Copyright &copy 2021 Young Americans Basketball Club</center>
+                    </div>
+                </div>
+            </div>
+            <div class="row black_container">
+                <div class="col-12 no_top_pad">
+                    <center>
+                        <a href="https://www.facebook.com/Youngamericansbasketballtraining"><i class="fa fa-facebook-official footer_icon_sz"></i></a>
+                        <a href="https://www.instagram.com/young.americans.basketball/"><i class="fa fa-instagram footer_icon_sz"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5M3YoQ_iWjYDFfwq-Xz69A"><i class="fa fa-youtube-play footer_icon_sz"></i></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function hamburger_toggle() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>

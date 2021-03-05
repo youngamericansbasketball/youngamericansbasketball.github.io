@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="nav-bar-black">
+            <a href="index.html"><img class="nav-bar-item-left" src="ya_images\logo.PNG"></a>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Navigation links (hidden by default on mobile device) -->
+            <div id="myLinks">
+                <a href="contactus.html" class="nav-button nav-bar-item-right">Contact Us</a>
+                <a href="upcomingevents.html" class="nav-button nav-bar-item-right">Upcoming Events</a>
+                <a href="training.html" class="nav-button nav-bar-item-right">Skills Training</a>
+                <a href="dev_league.html" class="nav-button nav-bar-item-right">Leagues</a>
+                <a href="club.html" class="nav-button nav-bar-item-right">Club Teams</a>
+            </div>
+        </nav>
+
+        <!-- Second Navigation -->
+        <nav class="nav-bar-red">
+            <a href="dev_league.html" class="second-nav-button">Register Now</a>
+            |
+            <a href="covidpolicies.html"    class="second-nav-button">Covid Policies</a>
+        </nav>
+
+        <!-- Page Title -->
+        <div class="row">
+            <br>
+            <div class="col-12">
+                <div class="general_title">Contact Us</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 no_top_pad">
+                <div class="gen_paragraph_text">
+                    <center>
+                        Thank you for your interest in Young Americans Basketball Club!
+                        Please don't hesitate to reach out to Coach Joe with any questions,
+                        comments or concerns.
+                        <br><br><b>Young Americans Basketball Club</b>
+                        <br> Coach Joe Hubbuch
+                        <br> 520-347-0709
+                        <br> youngamericansbasketball@gmail.com
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="row black_container">
+                <div class="col-12">
+                    <div class="gen_paragraph_text">
+                        <center>Copyright &copy 2021 Young Americans Basketball Club</center>
+                    </div>
+                </div>
+            </div>
+            <div class="row black_container">
+                <div class="col-12 no_top_pad">
+                    <center>
+                        <a href="https://www.facebook.com/Youngamericansbasketballtraining"><i class="fa fa-facebook-official footer_icon_sz"></i></a>
+                        <a href="https://www.instagram.com/young.americans.basketball/"><i class="fa fa-instagram footer_icon_sz"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5M3YoQ_iWjYDFfwq-Xz69A"><i class="fa fa-youtube-play footer_icon_sz"></i></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function hamburger_toggle() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>

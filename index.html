@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="nav-bar-black">
+            <a href="index.html"><img class="nav-bar-item-left" src="ya_images\logo.PNG"></a>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Navigation links (hidden by default on mobile device) -->
+            <div id="myLinks">
+                <a href="contactus.html" class="nav-button nav-bar-item-right">Contact Us</a>
+                <a href="upcomingevents.html" class="nav-button nav-bar-item-right">Upcoming Events</a>
+                <a href="training.html" class="nav-button nav-bar-item-right">Skills Training</a>
+                <a href="dev_league.html" class="nav-button nav-bar-item-right">Leagues</a>
+                <a href="club.html" class="nav-button nav-bar-item-right">Club Teams</a>
+            </div>
+        </nav>
+
+        <!-- Second Navigation -->
+        <nav class="nav-bar-red">
+            <a href="dev_league.html" class="second-nav-button">Register Now</a>
+            |
+            <a href="covidpolicies.html"    class="second-nav-button">Covid Policies</a>
+        </nav>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="hi_res_images\ball.jpg" style="width:100%">
+                <div class="text_club_title"><b>YOUNG AMERICANS BASKETBALL CLUB</b></div>
+                <div class="text_slogan"><i>We train you. We coach you. We make you better.</i></div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="hi_res_images\court.jpg" style="width:100%">
+                <div class="text_club_title"><b>YOUNG AMERICANS BASKETBALL CLUB</b></div>
+                <div class="text_slogan"><i>We train you. We coach you. We make you better.</i></div>
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="hi_res_images\swish.jpg" style="width:100%">
+                <div class="text_club_title"><b>YOUNG AMERICANS BASKETBALL CLUB</b></div>
+                <div class="text_slogan"><i>We train you. We coach you. We make you better.</i></div>
+            </div>
+        
+        </div>
+
+        <br>
+
+        <!-- Not used but can't be deleted because for some God forsaken reason it breaks the slideshow -->
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <!-- Intro Paragraph -->
+        <div class="row">
+            <div class="col-12">
+                <div class="general_title">Affordable World Class Coaching</div>
+                <p class="justify intro_paragraph gen_paragraph_text gen_opacity">
+                    Welcome to Young Americans Basketball Club, the #1 club in Southern
+                    Arizona for developing great players. With over 30 years of 
+                    professional experience, we specialize in player development guranteed 
+                    to take every player's game to the next level. We work with players of 
+                    all skill levels and ages, so whether you're looking to join a team to 
+                    enjoy casual play in our development leagues, try out for our competative  
+                    club teams to compete in the nations most prestigious tournaments, or  
+                    just want to sharpen your skills with Coach Joe's training sessions, we 
+                    have something for every player.
+                </p>
+            </div>
+        </div>
+
+        <!-- Leagues and Training -->
+        <div class="row light-gray">
+            <div class="col-4">
+                <div class="general_title">
+                    <center>Development League</center>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="general_title">
+                    <center>Club Team</center>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="general_title">
+                    <center>Skills Training</center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row light-gray">
+            <div class="col-4 no_top_pad ">
+                <div class="gen_paragraph_text">
+                    <p>*8 professionally coached practices</p>
+                    <p>*8 5-on-5 games</p>
+                    <p>*Season ending championship tournament</p>
+                    <p>*Perfect for new or casual players</p>
+                    <p>*Ages 1st Grade - High School</p>
+                    <p>*<b>Now accepting registrations for Spring 2021</b></p>
+                </div>
+            </div>
+
+            <div class="col-4 no_top_pad ">
+                <div class="gen_paragraph_text">
+                    <p>*Professionally coached practices</p>
+                    <p>*Compete in some of the nations most prestigious tournaments</p>
+                    <p>*Perfect for players looking to compete at the highest level</p>
+                    <p>*Ages 1st Grade - High School</p>
+                    <p>*<b>New players will need to try out</b></p>
+                </div>
+            </div>
+
+            <div class="col-4 no_top_pad ">
+                <div class="gen_paragraph_text">
+                    <p>*Individual and group training sessions available</p>
+                    <p>*Perfect for players looking to take their game to the next level</p>
+                    <p>*Focuses on ball handling, footwork and shooting</p>
+                    <p>*Ages 1st Grade - High School</p>
+                    <p>*<b>Club membership NOT required</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row light-gray">
+            <div class="col-4 no_top_pad">
+                <center>
+                    <a href="dev_league.html"> <button class="button2">Development League</button></a>
+                </center>
+            </div>
+            <div class="col-4 no_top_pad">
+                <center>
+                    <a href="club.html"> <button class="button2">Club Team</button></a>
+                </center>
+            </div>
+            <div class="col-4 no_top_pad">
+                <center>
+                    <a href="training.html"> <button class="button2">Skills Training</button></a>
+                </center>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="row">
+            <div class="col-12">
+                <div class="general_title">Testimonials</div>
+            </div>
+            <center>
+                <p class="gen_paragraph_text gen_opacity">
+                    <i>"In just one year, Young Americans skills training sessions have changed 
+                        my son's game significantly! I saw drastic changes in his ball handling,
+                        footwork and individual skills within a month... I'm so grateful to YA for
+                        giving my son the skills he needs to be a succesful basketball player!
+                        You can't find a better program in Tucson!"</i>
+                    <br> - Nicole M.
+                </p>
+
+                <p class="gen_paragraph_text gen_opacity">
+                    <i>"This club isn't like the others in town. Coach Joe is a professional coach
+                        and it is obvious right away that the quality of his practices and skills
+                        trainings are unmatched."</i>
+                    <br> - Ricky L.
+                </p>
+            </center>
+        </div>
+
+        <!-- Our Gym -->
+        <div class="row light-gray">
+            <div class="col-12">
+                <div class="general_title">
+                    <center>Our Gym</center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row light-gray">
+            <div class="col-6 gym_image no_top_pad">
+                <img src="ya_images/gym.jpg" style="width:80%">
+            </div>
+            <div class="col-6 gen_paragraph_text no_top_pad">
+                Tanque Verde Lutheran Church
+                <br> 8625 E Tanque Verde Rd
+                <br> Tucson, AZ 85749
+            </div>
+        </div>
+
+        <!-- Sponsors -->
+        <div class="row">
+            <div class="col-12">
+                <div class="general_title">Our Sponsors</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 no_top_pad ">
+                <center>
+                    <a href="https://www.deserttoyota.com/"><img src="random_images/desert_toyota.jpg" style="width:40%"></a>
+                </center>
+            </div>
+            
+            <div class="col-6 no_top_pad">
+                <center>
+                    <a href="https://www.thoroughbrednissan.com/"><img src="random_images/thoroughbred_nissan.jpg" style="width:40%"></a>
+                </center>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row black_container">
+            <div class="col-12">
+                <div class="gen_paragraph_text">
+                    <center>Copyright &copy 2021 Young Americans Basketball Club</center>
+                </div>
+            </div>
+        </div>
+        <div class="row black_container">
+            <div class="col-12 no_top_pad">
+                <center>
+                    <a href="https://www.facebook.com/Youngamericansbasketballtraining"><i class="fa fa-facebook-official footer_icon_sz"></i></a>
+                    <a href="https://www.instagram.com/young.americans.basketball/"><i class="fa fa-instagram footer_icon_sz"></i></a>
+                    <a href="https://www.youtube.com/channel/UC5M3YoQ_iWjYDFfwq-Xz69A"><i class="fa fa-youtube-play footer_icon_sz"></i></a>
+                </center>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+        
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+        
+              slideIndex++;
+        
+              if (slideIndex > slides.length) {
+                  slideIndex = 1
+              }    
+                                           
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+        
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function hamburger_toggle() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
+
+        </script>
+
+    </body>
+</html>
