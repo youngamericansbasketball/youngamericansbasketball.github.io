@@ -222,6 +222,10 @@ img {vertical-align: middle;}
   line-height: 1.5;
 }
 
+.orange_text {
+  color: rgb(255, 51, 0);
+}
+
 .gen_opacity,.gen_opacity:hover {
   opacity:0.60;
 }
