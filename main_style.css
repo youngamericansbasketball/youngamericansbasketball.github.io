@@ -306,6 +306,17 @@ img {vertical-align: middle;}
 .hidden {
   display: none;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 /******************************************************** 
                           FOOTER
 ********************************************************/
