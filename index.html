@@ -190,25 +190,29 @@
 
                 <!-- All images must be 900 x 540 px -->
                 <center>
+
                     <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
                         <img src="ya_images/3rd_grade_spring_fling_2021.PNG" style="width:100%">
-                        <div class="text_slogan headline_bottom headline_bottom_color">
-                            3rd Grade Team Wins Spring Fling Tournament 2021 Championship
-                        </div>
                     </div>
 
                     <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
                         <img src="ya_images/7th_grade_schools_out_champs.png" style="width:100%">
-                        <div class="text_slogan headline_bottom headline_bottom_color">
-                            7th Grade Team Wins Schools Out Tournament 2021 Championship
-                        </div>
                     </div>
 
                     <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
                         <img src="ya_images/development_league_placements.png" style="width:100%">
-                        <div class="text_slogan headline_bottom headline_bottom_color">
-                            Summer 2021 Development League Team Placement Event
-                        </div>
+                    </div>
+
+                    <div class="text_headline headline_bottom_color mySlides3" style="max-width:50%">
+                        3rd Grade Team Wins Spring Fling Tournament 2022 Championship
+                    </div>
+
+                    <div class="text_headline headline_bottom_color mySlides3" style="max-width:50%">
+                        7th Grade Team Wins Schools Out Tournament 2021 Championship
+                    </div>
+
+                    <div class="text_headline headline_bottom_color mySlides3" style="max-width:50%">
+                        Summer 2021 Development League Team Placement Event
                     </div>
 
                 </center>
@@ -335,6 +339,22 @@
                 if (myIndex > x.length) {myIndex = 1}    
                 x[myIndex-1].style.display = "block";  
                 setTimeout(carousel, 7000); // Change image every 7 seconds
+            }
+
+            // News/Headlines Slideshow Header
+            var slideIndex2 = 0;
+            carousel2();
+
+            function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            slideIndex2++;
+            if (slideIndex2 > x.length) {slideIndex2 = 1} 
+            x[slideIndex2-1].style.display = "block"; 
+            setTimeout(carousel2, 7000); 
             }
             
         </script>

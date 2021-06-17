@@ -204,15 +204,16 @@ img {vertical-align: middle;}
 /******************************************************** 
                        NEWS SLIDER 
 ********************************************************/
-.headline_bottom {
-  /* position:absolute; */
-  position:sticky;
-  bottom: 1px;
-}
 .headline_bottom_color {
   color:#fff!important;
   background-color:#000!important;
-  opacity:0.83;
+}
+
+.text_headline {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  text-align: center;
 }
 
 /******************************************************** 
