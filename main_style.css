@@ -205,8 +205,8 @@ img {vertical-align: middle;}
                        NEWS SLIDER 
 ********************************************************/
 .headline_bottom {
-  position:absolute;
-  /* position:static; */
+  /* position:absolute; */
+  position:sticky;
   bottom: 1px;
 }
 .headline_bottom_color {
