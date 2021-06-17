@@ -206,7 +206,7 @@ img {vertical-align: middle;}
 ********************************************************/
 .headline_bottom {
   /* position:absolute; */
-  position:relative;
+  position:static;
   left:0;
   bottom:0
 }
