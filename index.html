@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="main_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
           
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -181,6 +182,47 @@
             </center>
         </div>
 
+        <!-- News -->
+        <div class="row light-gray">
+            <div class="col-12">
+                <div class="general_title">News/Headlines</div>
+                <br>
+
+                <!-- All images must be 900 x 540 px -->
+                <center>
+                    <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
+                        <img src="ya_images/3rd_grade_spring_fling_2021.PNG" style="width:100%">
+                        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                            3rd Grade Team Wins Spring Fling Tournament 2021 Championship
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
+                        <img src="ya_images/7th_grade_schools_out_champs.PNG" style="width:100%">
+                        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                            7th Grade Team Wins Schools Out Tournament 2021 Championship
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container newsAndEventsSlideshow" style="max-width:50%">
+                        <img src="ya_images/development_league_placements.png" style="width:100%">
+                        <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                            Summer 2021 Development League Team Placement Event
+                        </div>
+                    </div>
+
+                </center>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="row">
+            <div class="col-12">
+                <div class="general_title" style="padding-bottom: 1%;">Upcoming Events</div>
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FPhoenix&amp;src=c3Qxa204MGRxbHNub3A3NTQwbmYxNTBsYTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZGM5MmJjbG42anR0aGdxc2o3NW8xNWs2NG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Nm83ZzMzOWlqaDVkOWNuNHZkcWYycXQ2aDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%230B8043&amp;color=%23F4511E&amp;color=%233F51B5&amp;showTitle=0&amp;showNav=1&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=1&amp;showTz=1" style="border:solid 3px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+
         <!-- Our Gym -->
         <div class="row light-gray">
             <div class="col-12">
@@ -198,25 +240,6 @@
                 Tanque Verde Lutheran Church
                 <br> 8625 E Tanque Verde Rd
                 <br> Tucson, AZ 85749
-            </div>
-        </div>
-
-        <!-- Upcoming Events -->
-        <div class="row">
-            <div class="col-12">
-                <div class="general_title" style="padding-bottom: 1%;">Upcoming Events</div>
-                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FPhoenix&amp;src=c3Qxa204MGRxbHNub3A3NTQwbmYxNTBsYTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZGM5MmJjbG42anR0aGdxc2o3NW8xNWs2NG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Nm83ZzMzOWlqaDVkOWNuNHZkcWYycXQ2aDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%230B8043&amp;color=%23F4511E&amp;color=%233F51B5&amp;showTitle=0&amp;showNav=1&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;showCalendars=1&amp;showTz=1" style="border:solid 3px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-
-        <!-- News -->
-        <div class="row light-gray">
-            <div class="col-12">
-                <div class="general_title">News/Headlines</div>
-                <center>
-                    <p class="intro_paragraph gen_paragraph_text">3rd Grade Team Wins Spring Fling 10U 2021 Championship</p>
-                    <img src="ya_images/3rd_grade_spring_fling_2021.PNG" alt="3rd Grade Spring Fling 2021 Champions" style="width:50%;height:50%;">
-                </center>
             </div>
         </div>
 
@@ -298,6 +321,22 @@
                 }
             }
 
+            // News/Headlines Slideshow
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("newsAndEventsSlideshow");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 7000); // Change image every 7 seconds
+            }
+            
         </script>
 
     </body>
