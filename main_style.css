@@ -204,7 +204,16 @@ img {vertical-align: middle;}
 /******************************************************** 
                        NEWS SLIDER 
 ********************************************************/
-.headline_bottom{position:absolute;left:0;bottom:0}
+.headline_bottom {
+  position:absolute;
+  left:0;
+  bottom:0
+}
+.headline_bottom_color {
+  color:#fff!important;
+  background-color:#000!important;
+  opacity:0.83;
+}
 
 /******************************************************** 
                          GENERAL
