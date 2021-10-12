@@ -11,24 +11,31 @@
 
     <body>
 
-        <!-- Navigation -->
-        <nav class="nav-bar-black">
-            <a href="index.html"><img class="nav-bar-item-left" src="ya_images\logo.PNG"></a>
+        <!-- Main navigation menu -->
+        <div class="navbar">
+            <div class="nav_bar_logo">
+                <a href="index.html"><img class="" src="ya_images\logo.PNG"></a>
+            </div>
 
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
                 <i class="fa fa-bars"></i>
             </a>
 
-            <!-- Navigation links (hidden by default on mobile device) -->
-            <div id="myLinks">
-                <a href="contactus.html" class="nav-button nav-bar-item-right">Contact Us</a>
-                <a href="calendars.html" class="nav-button nav-bar-item-right">Calendar/Schedules</a>
-                <a href="training.html" class="nav-button nav-bar-item-right">Skills Training</a>
-                <a href="dev_league.html" class="nav-button nav-bar-item-right">Development League</a>
-                <a href="club.html" class="nav-button nav-bar-item-right">Club Teams</a>
+            <div id="myLinks" class="nav_bar_text">
+                <a class="nav_item" href="training.html">Skills Training</a>
+                <a class="nav_item" href="club.html">Club Teams</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Development League 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="dev_league.html">Girls</a>
+                        <a href="dev_league.html">Boys</a>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
 
         <!-- Second Navigation -->
         <nav class="nav-bar-red">
