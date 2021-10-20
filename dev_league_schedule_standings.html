@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Main navigation menu -->
+        <div class="navbar">
+            <div class="nav_bar_logo">
+                <a href="index.html"><img class="" src="ya_images\logo.PNG"></a>
+            </div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div id="myLinks" class="nav_bar_text">
+                <a class="nav_item" href="training.html">Skills Training</a>
+                <a class="nav_item" href="club.html">Club Teams</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Development League 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="dev_league.html">Details/Sign Up</a>
+                        <a href="dev_league.html">Fall '21 Schedule/Standings</a>
+                        <a href="dev_league_rosters.html">Fall '21 Team Rosters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Navigation -->
+        <nav class="nav-bar-red">
+            <a href="leaguereg.html" class="second-nav-button">Register Now</a>
+            |
+            <a href="contactus.html" class="second-nav-button">Contact Us</a>
+        </nav>
+
+        <!-- Standings -->
+        <div class="row">
+            <br>
+
+            <div class="col-12">
+                <div class="general_title">Fall 2021 Standings</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="gen_paragraph_text">
+
+                        <table>
+                            <!-- 5th/6th Grade -->
+                            <tr>
+                                <th style="width:25%">Team</th>
+                                <th style="width:12%">Wins</th>
+                                <th style="width:12%">Losses</th>
+                                <th style="width:12%">Streak</th>
+                                <th style="width:12%">PF</th>
+                                <th style="width:12%">PA</th>
+                                <th style="width:12%">Diff</th>
+                            </tr>
+                            <tr>
+                                <td>5th/6th Grade Blazers</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>W1</td>
+                                <td>151</td>
+                                <td>121</td>
+                                <td>+30</td>
+                            </tr>
+                            <tr>
+                                <td>5th/6th Grade Mavericks</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>W2</td>
+                                <td>128</td>
+                                <td>155</td>
+                                <td>-27</td>
+                            </tr>
+                            <tr>
+                                <td>5th/6th Grade Rockets</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>L1</td>
+                                <td>132</td>
+                                <td>125</td>
+                                <td>+7</td>
+                            </tr>
+                            <tr>
+                                <td>5th/6th Grade Nuggets</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>L2</td>
+                                <td>139</td>
+                                <td>149</td>
+                                <td>-10</td>
+                            </tr>
+                        </table>
+
+                        <!-- 3rd / 4th Grade -->
+                        <br>
+                        <table>
+                            <tr>
+                                <th style="width:25%">Team</th>
+                                <th style="width:12%">Wins</th>
+                                <th style="width:12%">Losses</th>
+                                <th style="width:12%">Streak</th>
+                                <th style="width:12%">PF</th>
+                                <th style="width:12%">PA</th>
+                                <th style="width:12%">Diff</th>
+                            </tr>
+                            <tr>
+                                <td>3rd/4th Grade Bucks</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>W1</td>
+                                <td>81</td>
+                                <td>48</td>
+                                <td>+33</td>
+                            </tr>
+                            <tr>
+                                <td>3rd/4th Grade 76ers</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>L1</td>
+                                <td>96</td>
+                                <td>81</td>
+                                <td>+15</td>
+                            </tr>
+                            <tr>
+                                <td>3rd/4th Grade Hornets</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>L1</td>
+                                <td>70</td>
+                                <td>85</td>
+                                <td>-15</td>
+                            </tr>
+                            <tr>
+                                <td>3rd/4th Grade Celtics</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>W1</td>
+                                <td>63</td>
+                                <td>96</td>
+                                <td>-33</td>
+                            </tr>
+                        </table>
+
+                        <!-- 1st & 2nd Grade -->
+                        <br>
+                        <table>
+                            <tr>
+                                <th style="width:25%">Team</th>
+                                <th style="width:12%">Wins</th>
+                                <th style="width:12%">Losses</th>
+                                <th style="width:12%">Streak</th>
+                                <th style="width:12%">PF</th>
+                                <th style="width:12%">PA</th>
+                                <th style="width:12%">Diff</th>
+                            </tr>
+                            <tr>
+                                <td>1st/2nd Grade Suns</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>W3</td>
+                                <td>104</td>
+                                <td>62</td>
+                                <td>+42</td>
+                            </tr>
+                            <tr>
+                                <td>1st/2nd Grade Warriors</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>L1</td>
+                                <td>62</td>
+                                <td>54</td>
+                                <td>+8</td>
+                            </tr>
+                            <tr>
+                                <td>1st/2nd Grade Lakers</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>W1</td>
+                                <td>66</td>
+                                <td>66</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1st/2nd Grade Clippers</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>L3</td>
+                                <td>30</td>
+                                <td>80</td>
+                                <td>-50</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schedule -->
+        <div class="row light-gray">
+            <br>
+            <div class="col-12">
+                <div class="general_title">Fall 2021 Game Schedule</div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="gen_paragraph_text">
+
+                        <!-- Week 1 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Sept. 11th</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM</td>
+                                <td>1st/2nd Grade Clippers (12) </td>
+                                <td>1st/2nd Grade Warriors (14) </td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>1st/2nd Grade Lakers (24) </td>
+                                <td>1st/2nd Grade Suns (38) </td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td>3rd/4th Grade Celtics (12) </td>
+                                <td>3rd/4th Grade Bucks (40) </td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>3rd/4th Grade 76ers (42) </td>
+                                <td>3rd/4th Grade Hornets (32) </td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>5th/6th Grade Mavericks (26) </td>
+                                <td>5th/6th Grade Blazers (56) </td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td>5th/6th Grade Rockets (35) </td>
+                                <td>5th/6th Grade Nuggets (42) </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Week 2 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Sept. 18th</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM</td>
+                                <td>1st/2nd Grade Warriors (20)</td>
+                                <td>1st/2nd Grade Lakers (12)</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>1st/2nd Grade Suns (36)</td>
+                                <td>1st/2nd Grade Clippers (10)</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td>3rd/4th Grade Bucks (16)</td>
+                                <td>3rd/4th Grade 76ers (24)</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>3rd/4th Grade Hornets (26)</td>
+                                <td>3rd/4th Grade Celtics (18)</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>5th/6th Grade Blazers (41)</td>
+                                <td>5th/6th Grade Rockets (56)</td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td>5th/6th Grade Nuggets (58)</td>
+                                <td>5th/6th Grade Mavericks (60)</td>
+                            </tr> 
+                        </table>
+
+                        <br>
+
+                        <!-- Week 3 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Sept. 25th</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>8:00 AM</td>
+                                <td>5th/6th Grade Mavericks (42)</td>
+                                <td>5th/6th Grade Rockets (41)</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM</td>
+                                <td>5th/6th Grade Nuggets (39)</td>
+                                <td>5th/6th Grade Blazers (54)</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>3rd/4th Grade Bucks (25)</td>
+                                <td>3rd/4th Grade Hornets (12)</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td>3rd/4th Grade 76ers (30)</td>
+                                <td>3rd/4th Grade Celtics (33)</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>1st/2nd Grade Warriors (28)</td>
+                                <td>1st/2nd Grade Suns (30)</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>1st/2nd Grade Lakers (30)</td>
+                                <td>1st/2nd Grade Clippers (8)</td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Week 4 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Oct. 2nd</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM</td>
+                                <td>1st/2nd Grade Warriors </td>
+                                <td>1st/2nd Grade Clippers </td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>1st/2nd Grade Suns </td>
+                                <td>1st/2nd Grade Lakers </td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM</td>
+                                <td>3rd/4th Grade Bucks </td>
+                                <td>3rd/4th Grade Celtics </td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>3rd/4th Grade Hornets </td>
+                                <td>3rd/4th Grade 76ers </td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>5th/6th Grade Blazers </td>
+                                <td>5th/6th Grade Mavericks </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td>5th/6th Grade Nuggets </td>
+                                <td>5th/6th Grade Rockets </td>
+                            </tr>
+                        </table>
+
+                        <br>
+
+                        <!-- Week 5 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Oct. 23rd</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>1st/2nd Grade Lakers </td>
+                                <td>1st/2nd Grade Warriors </td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>1st/2nd Grade Clippers </td>
+                                <td>1st/2nd Grade Suns </td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td>3rd/4th Grade 76ers </td>
+                                <td>3rd/4th Grade Bucks </td>
+                            </tr>
+                            <tr>
+                                <td>3:00 PM</td>
+                                <td>3rd/4th Grade Celtics </td>
+                                <td>3rd/4th Grade Hornets </td>
+                            </tr>
+                            <tr>
+                                <td>4:00 PM</td>
+                                <td>5th/6th Grade Mavericks </td>
+                                <td>5th/6th Grade Nuggets </td>
+                            </tr>
+                            <tr>
+                                <td>5:00 PM</td>
+                                <td>5th/6th Grade Rockets </td>
+                                <td>5th/6th Grade Blazers </td>
+                            </tr> 
+                        </table>
+
+                        <br>
+
+                        <!-- Week 6 -->
+                        <table>
+                            <tr>
+                                <th style="width:30%">Saturday, Oct. 30th - Championship Weekend</th>
+                                <th style="width:30%">Home Team (black jersey)</th>
+                                <th style="width:30%">Away Team (white jersey)</th>
+                            </tr>
+                            <tr>
+                                <td>9:00 AM - Runner Up</td>
+                                <td>1st/2nd Grade 3rd Place Team</td>
+                                <td>1st/2nd Grade 4th Place Team</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 AM - Championship</td>
+                                <td>1st/2nd Grade 1st Place Team</td>
+                                <td>1st/2nd Grade 2nd Place Team</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM - Runner Up</td>
+                                <td>3rd/4th Grade 3rd Place Team</td>
+                                <td>3rd/4th Grade 4th Place Team</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM - Championship</td>
+                                <td>3rd/4th Grade 1st Place Team</td>
+                                <td>3rd/4th Grade 2nd Place Team</td>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM - Runner Up</td>
+                                <td>5th/6th Grade 3rd Place Team</td>
+                                <td>5th/6th Grade 4th Place Team</td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM - Championship</td>
+                                <td>5th/6th Grade 1st Place Team</td>
+                                <td>5th/6th Grade 2nd Place Team</td>
+                            </tr> 
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row black_container">
+            <div class="col-12">
+                <div class="gen_paragraph_text">
+                    <center>Copyright &copy 2021 Young Americans Basketball Club</center>
+                </div>
+            </div>
+        </div>
+        <div class="row black_container">
+            <div class="col-12 no_top_pad">
+                <center>
+                    <a href="https://www.facebook.com/Youngamericansbasketballtraining"><i class="fa fa-facebook-official footer_icon_sz"></i></a>
+                    <a href="https://www.instagram.com/young.americans.basketball/"><i class="fa fa-instagram footer_icon_sz"></i></a>
+                    <a href="https://www.youtube.com/channel/UC5M3YoQ_iWjYDFfwq-Xz69A"><i class="fa fa-youtube-play footer_icon_sz"></i></a>
+                </center>
+            </div>
+        </div>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function hamburger_toggle() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>
