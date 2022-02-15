@@ -203,6 +203,10 @@ img {vertical-align: middle;}
   height: 600px;
 }
 
+.merch_img_height {
+  height: 400px;
+}
+
 .text_slogan {
   color: #f2f2f2;
   font-size: 25px;
@@ -451,6 +455,10 @@ td, th {
     height: 400px;
   }
 
+  .merch_img_height {
+    height: 400px;
+  }
+
 }
 /******************************************************** 
                    IPHONE ADJUSTMENTS 
@@ -536,6 +544,10 @@ td, th {
   }
 
   .slideshow_img_height {
+    height: 200px;
+  }
+
+  .merch_img_height {
     height: 200px;
   }
 
