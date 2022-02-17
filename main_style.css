@@ -207,6 +207,10 @@ img {vertical-align: middle;}
   height: 400px; 
 }
 
+.img_height_poster {
+  height: 500px;
+}
+
 .text_slogan {
   color: #f2f2f2;
   font-size: 25px;
@@ -455,6 +459,10 @@ td, th {
     height: 400px;
   }
 
+  .img_height_poster {
+    height: 400px;
+  }
+
   .merch_img_height {
     height: 400px;
   }
@@ -544,6 +552,10 @@ td, th {
   }
 
   .slideshow_img_height {
+    height: 200px;
+  }
+
+  .img_height_poster {
     height: 200px;
   }
 
