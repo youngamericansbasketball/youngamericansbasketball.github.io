@@ -211,6 +211,10 @@ img {vertical-align: middle;}
   height: 500px;
 }
 
+.img_height_coaches {
+  height: 300px;
+}
+
 .text_slogan {
   color: #f2f2f2;
   font-size: 25px;
