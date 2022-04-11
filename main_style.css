@@ -290,6 +290,10 @@ img {vertical-align: middle;}
   color:rgb(239, 22, 177)
 }
 
+.red_font {
+  color:rgb(255, 0, 0)
+}
+
 .gen_paragraph_text {
   font-family: Verdana, sans-serif;
   font-size: 15px;
