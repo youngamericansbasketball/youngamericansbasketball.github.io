@@ -278,6 +278,10 @@ img {vertical-align: middle;}
   text-align:justify!important
 }
 
+.img_border {
+  border: 5px solid #555;
+}
+
 .general_title {
   color: rgb(255, 51, 0);
   font-size: 30px;
