@@ -211,6 +211,11 @@ img {vertical-align: middle;}
   height: 500px;
 }
 
+.img_height_schedule {
+  height: 400px;
+}
+
+
 .img_height_coaches {
   height: 300px;
 }
@@ -479,6 +484,10 @@ td, th {
     height: 400px;
   }
 
+  .img_height_schedule {
+    height: 200px;
+  }
+
   .merch_img_height {
     height: 400px;
   }
@@ -573,6 +582,10 @@ td, th {
 
   .img_height_poster {
     height: 200px;
+  }
+
+  .img_height_schedule {
+    height: 115px;
   }
 
   .img_height_coaches {
