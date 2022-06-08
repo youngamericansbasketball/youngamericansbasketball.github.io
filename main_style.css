@@ -72,6 +72,16 @@ a {
   background-color: rgb(255, 51, 0)!important
 }
 
+.nav-bar-pink {
+  overflow: hidden; 
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  color: #fff!important; 
+  background-color: rgb(239, 22, 177)!important
+}
+
 .second-nav-button {
   color: inherit;
   background-color: inherit;
