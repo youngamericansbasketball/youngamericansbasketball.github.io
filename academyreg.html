@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Main navigation menu -->
+        <div class="navbar">
+            <div class="nav_bar_logo">
+                <a href="index.html"><img class="" src="ya_images\logo.PNG"></a>
+            </div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger_icon" onclick="hamburger_toggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div id="myLinks" class="nav_bar_text">
+                <a class="nav_item" href="merch.html">Merchandise</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Development League 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <nav class="nav-bar-pink">GIRLS LEAGUE</nav>
+                        <a href="leaguereg_girls.html">Sign Up</a>
+                        <a href="dev_league_rosters_girls.html">Summer '22 Team Rosters</a>
+                        <a href="dev_league_schedule_standings_girls.html">Summer '22 Schedule/Standings</a>
+                        <nav class="nav-bar-red">COED LEAGUE</nav>
+                        <a href="leaguereg.html">Sign Up</a>
+                        <a href="dev_league_rosters_coed.html">Summer '22 Team Rosters</a>
+                        <a href="dev_league_schedule_standings_coed.html">Summer '22 Schedule/Standings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Navigation -->
+        <nav class="nav-bar-red">
+            <a href="contactus.html" class="second-nav-button">Contact Us</a>
+        </nav>
+
+        <!-- Page Title -->
+        <div class="row">
+            <br>
+            <div class="col-12">
+                <div class="general_title">Tucson Basketball Factory Training Academy - Summer Camp</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="gen_paragraph_text">
+                    <center>Now accepting registration for all age groups!</center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="gen_paragraph_text"><b>Dates:</b> July 11th - July 14th</div>
+            </div>
+            <div class="col-4">
+                <div class="gen_paragraph_text"><b>Ages:</b> K - 8th Grade</div>
+            </div>
+            <div class="col-4">
+                <div class="gen_paragraph_text"><b>Cost:</b> $85 (includes t-shirt)</div>
+            </div>
+        </div>
+
+        <!-- Form Start -->
+        <div class="row">
+            <form method="POST" name="training_academy_reg_form" action="https://formspree.io/f/xwkyzjaq">
+
+                <input type="text" id="reg_type" name="Registration Type" value="Training Academy Registration" class="hidden"><br>
+
+                <div class="row">
+                    <div class="col-6 no_top_pad">
+                        <label for="parfname" class="gen_paragraph_text">Parent First Name*</label><br>
+                        <input type="text" id="parent_first_name" name="Parent First Name" value="" class="reg_input"><br>
+                    </div>
+                    <div class="col-6 no_top_pad">
+                        <label for="parlname" class="gen_paragraph_text">Parent Last Name*</label><br>
+                        <input type="text" id="parent_last_name" name="Parent Last Name" value="" class="reg_input"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 no_top_pad">
+                        <label for="email" class="gen_paragraph_text">Email*</label><br>
+                        <input type="email" id="email_address" name="Email Address" value="" class="reg_input"><br>
+                    </div>
+
+                    <div class="col-6 no_top_pad">
+                        <label for="phone" class="gen_paragraph_text">Phone*</label><br>
+                        <input type="text" id="phone_num" name="Phone Number" value="" class="reg_input"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 no_top_pad">
+                        <label for="playerfname" class="gen_paragraph_text">Player First Name*</label><br>
+                        <input type="text" id="player_first_name" name="Player First Name" value="" class="reg_input"><br>
+                    </div>
+                    <div class="col-6 no_top_pad">
+                        <label for="playerlname" class="gen_paragraph_text">Player Last Name*</label><br>
+                        <input type="text" id="player_last_name" name="Player Last Name" value="" class="reg_input"><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 no_top_pad">
+                        <label for="playerdob" class="gen_paragraph_text">Player Date of Birth*</label><br>
+                        <input type="text" id="player_dob" name="Player Date of Birth" value="" class="reg_input"><br>
+                    </div>
+                    <div class="col-6 no_top_pad">
+                        <label for="playergrade" class="gen_paragraph_text">School Grade*</label><br>
+                        <select id="playergrade" name="Grade" size="1" class="reg_input">
+                            <option value="Kinder">Kindergarten</option>
+                            <option value="1st">1st Grade</option>
+                            <option value="2nd">2nd Grade</option>
+                            <option value="3rd">3rd Grade</option>
+                            <option value="4th">4th Grade</option>
+                            <option value="5th">5th Grade</option>
+                            <option value="6th">6th Grade</option>
+                            <option value="7th">7th Grade</option>
+                            <option value="8th">8th Grade</option>
+                            </select><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 no_top_pad">
+                        <label for="tshirtsize" class="gen_paragraph_text">T-Shirt Size*</label><br>
+                        <select id="tshirtsize" name="T-Shirt Size" size="1" class="reg_input">
+                            <option value="Small">Youth Small</option>
+                            <option value="Medium">Youth Medium</option>
+                            <option value="Large">Youth Large</option>
+                            <option value="XL">Youth XL</option>
+                            <option value="XL">Youth XXL</option>
+                        </select><br><br>
+                    </div>
+                </div>
+
+                <!-- <div class="row gen_paragraph_text">
+                    <div class="col-12 no_top_pad">
+                        Are you interested in joining one of our Skills Training Sessions?<br>
+                        <input type="radio" id="club_team" name="Interested in Training" value="Yes">
+                        <label for="club_team" class="gen_paragraph_text">Yes, the more practice the better!</label><br>
+                        <input type="radio" id="dev_team" name="Interested in Training" value="No">
+                        <label for="dev_team" class="gen_paragraph_text">Not at this time.</label><br>
+                        <input type="radio" id="maybe" name="Interested in Training" value="Maybe Later">
+                        <label for="maybe" class="gen_paragraph_text">Maybe later.</label>
+                    </div>
+                </div> -->
+
+                <div class="row">
+                    <div class="col-12 no_top_pad">
+                        <center>
+                            <input type="submit" value="Submit" class="button"></button>
+                        </center>
+                    </div>
+                </div>
+            </form>
+            <br>
+        </div>
+        <!-- Form End -->
+
+        <!-- Footer -->
+            <div class="row black_container">
+                <div class="col-12">
+                    <div class="gen_paragraph_text">
+                        <center>Copyright &copy 2022 Young Americans Basketball Club</center>
+                    </div>
+                </div>
+            </div>
+            <div class="row black_container">
+                <div class="col-12 no_top_pad">
+                    <center>
+                        <a href="https://www.facebook.com/Youngamericansbasketballtraining"><i class="fa fa-facebook-official footer_icon_sz"></i></a>
+                        <a href="https://www.instagram.com/young.americans.basketball/"><i class="fa fa-instagram footer_icon_sz"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5M3YoQ_iWjYDFfwq-Xz69A"><i class="fa fa-youtube-play footer_icon_sz"></i></a>
+                    </center>
+                </div>
+            </div>
+
+        <script>
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function hamburger_toggle() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>
