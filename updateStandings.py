@@ -33,7 +33,7 @@ def parseHtmlFile(fileName: str):
         soup = BeautifulSoup(content, 'html.parser')
 
         # Finding an anchor tag containing the text "Geeks For Geeks"
-        # anchor_tag = soup.find('td', string='Pre-K/K Magic')
+        # anchor_tag = soup.find('td', string='Pre-K/K Raptors')
 
         all_rows = soup.find_all('td')
         # print(anchor_tag_all)
